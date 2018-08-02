@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+
+  	<!-- ===================
+        * UMG Interview Coding Challenge *
+  	      post malone countdown clock - 7.24.2018
+  	      -author, designer: nick campbell
+  	      -made with usability, code readability, and contemporary design aesthetics in mind
+         =================== -->
+
+    <meta name="description" content="POST MALONE BETTER NOW MUSIC VIDEO OUT MAY 24TH.">
+    <meta name="author" content="Nicholas Campbell">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Post Malone - 'Better Now' Music Video</title>
+
+    <!-- jQuery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles and favicons for this site -->
+    <link href="css/posty.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-small.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-med.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-large.png" sizes="96x96">
+
+    <!-- Countdown Clock Font - "Orbitron" -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <!-- Logo Font - "Anton" -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <!-- COUNTDOWN JS SCRIPT -->
+  <script>
+      // Set valid end date
+      var endDate = new Date("May 23, 2019 11:59:59").getTime();
+
+      // Update every 1 second (1000 milliseconds)
+      var x = setInterval(function() {
+
+        // Get the present date & time
+        var now = new Date().getTime();
+
+        // Find the distance between the two dates
+        var distance = endDate - now;
+
+        // Calculating remaining days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display result in "countdown-timer" element id
+        document.getElementById("countdown-timer").innerHTML = days + " : " + hours + " : "
+        + minutes + " : " + seconds;
+
+        // If the count down is finished, write that the video is out
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "OUT NOW!";
+        }
+      }, 1000);
+    </script>
+  <!-- END COUNTDOWN JS SCRIPT, START PAGE BODY -->
+    <nav class="navbar">
+      <a href="http://www.postmalone.com/" id="logo">beerbongs&bentleys</a>
+    </nav>
+
+    <div class="container"> 
+      <div class="row justify-content-center align-items-center">
+        <div class="col-6 offset-3">
+          <h2>POST MALONE - 'BETTER NOW' MUSIC VIDEO</h2>
+          <h2>OUT MAY 24TH</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-10">
+          <div class="countdown-timer" id="countdown-timer"></div>
+        </div>
+      </div>
+    </div>
+
+    <center>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 vcenter">
+          <table>
+            <tr>
+              <td style="text-align:center;">LISTEN TO THE ALBUM NOW:</td>
+            </tr>
+            <tr>
+              <td><i class="fab fa-itunes-note fa-2x"></i>&emsp;&emsp;
+                <a class="btn btn-primary" href="https://itunes.apple.com/us/album/beerbongs-bentleys/1373516902?app=music&ign-mpt=uo%3D4" role="button">Listen on Apple Music</a></td>
+            </tr>
+            <tr>
+              <td><i class="fab fa-spotify fa-2x"></i>&emsp;&ensp;
+                <a class="btn btn-primary" href="https://open.spotify.com/album/6trNtQUgC8cgbWcqoMYkOR" role="button">Listen on Spotify</a></td>
+            </tr>
+            <tr>
+              <td><i class="fab fa-soundcloud fa-2x"></i>&emsp;
+                <a class="btn btn-primary" href="https://soundcloud.com/postmalone/sets/beerbongs-bentleys-2" role="button">Listen on Soundcloud</a></td>
+            </tr>
+            <tr>
+              <td><i class="fab fa-google-play fa-2x"></i>&emsp;&ensp;&nbsp;
+                <a class="btn btn-primary" href="https://play.google.com/store/music/album/Post_Malone_beerbongs_bentleys?id=Bs4mrtyijtpvx3dh6fi67ueyh2e&PAffiliateID=1l3varo&PCamRefID=LFV_128adb7e736c56c8ed964adcc87e6532" role="button">Listen on Google Play</a></td>
+            </tr>
+            <tr>
+              <td><i class="fab fa-itunes fa-2x"></i>&emsp;&emsp;
+                <a class="btn btn-primary" href="https://itunes.apple.com/us/album/beerbongs-bentleys/1373516902?app=itunes&ign-mpt=uo%3D4" role="button">Buy on iTunes</a></td>
+            </tr>
+            <tr>
+              <td><i class="fab fa-amazon fa-2x"></i>&emsp;&emsp;
+                <a class="btn btn-primary" href="https://www.amazon.com/dp/B07C89TZ1C?tag=republicrecor-20&ie=UTF8&linkCode=as2&ascsubtag=76ce417ec03555e2e4928fd3dbc488bc" role="button">Buy on Amazon</a></td>
+            </tr>
+            <tr>
+              <td>T I D A L &nbsp;
+                <a class="btn btn-primary" href="https://listen.tidal.com/album/87942751" role="button">Listen on Tidal</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-6 col-md-6 vcenter">
+          <center>
+          <br>
+          <br>
+          <a href="http://www.postmalone.com/"><img src="images/beerbongs-bentleys-cover.jpg" alt="Beerbongs & Bentleys Album Cover." width="400 px"></a>
+          <br>
+          <br>
+          </center>
+        </div>
+      </div>
+    </div>
+    </center>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Script
+    ================================================== -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
