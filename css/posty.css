@@ -1,0 +1,167 @@
+html {
+    height: 100%;
+}
+
+body {
+  height: 100%;
+  background: url("../images/posty_singing.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@font-face {
+	font-family: DS-Digital, sans-serif;
+    src: url(../fonts/DS-DIGI.TTF);
+}
+
+.navbar {
+	background-color: #FFEB00;
+	height: 70px;
+	text-align: center;
+}
+
+#logo {
+	font-family: "Anton", sans-serif;
+	font-weight: 400;
+	font-size: 3em;
+	text-decoration: underline;
+	color: #666666;
+}
+
+h1 {
+	font-family: "Anton", sans-serif;
+	font-weight: 400;
+	font-size: 3em;
+	color: #FFEB00;
+	text-align: center;
+	margin-top: -1px;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 3em;
+	font-size: 2vw;
+	color: #FFEB00;
+	text-align: center;
+}
+
+h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 4em;
+	font-size: 2.5vw;
+	color: #FFEB00;
+}
+
+h4 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+	font-size: 1.5em;
+	font-size: 1.5vw;
+	color: #FFEB00;
+}
+
+.countdown-timer {
+  	font-family: "DS-Digital", sans-serif;
+  	font-weight: normal;
+  	font-style: normal;
+  	font-size: 5em;
+  	font-size: 5vw;
+  	color: #FFEB00;
+  	text-align: center;
+  	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.vcenter {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    float: none;
+}
+
+.btn-primary {
+	background: #FFEB00;
+	color: #000000;
+	padding: 15px 32px;
+	border: 1px;
+	border-color: #FFEB00;
+	border-radius: 5px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	width: 200px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+	background: white;
+	color: #222222;
+	border: 2px;
+	border-color: white;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: underline;
+	width: 200px;
+}
+
+.btn-primary:active, .btn-primary.active {
+	background: white;
+	color: #222222;
+	border: 2px;
+	border-color: white;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: underline;
+	width: 200px;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active, a.active {
+    text-decoration: underline;
+}
+
+table {
+	min-width: 50%;
+}
+
+td {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+	font-size: 1em;
+	color: #FFEB00;
+	text-align: right;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+img {
+	border-radius: 60px;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
